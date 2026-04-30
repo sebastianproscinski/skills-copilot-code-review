@@ -1,0 +1,11 @@
+---
+applyTo: "src/backend/**/*.py,src/app.py"
+---
+
+## Backend Guidelines
+
+- All feature/API routes should be defined in the `routers` folder. Explicit app-level exceptions in `src/app.py`, such as the root endpoint (`/`) and static file mounting, may remain there.
+- Load example database content from the `database.py` file.
+- Log full error details on the server, but return sanitized, appropriate HTTP status codes and safe error messages to clients. Do not propagate internal implementation details to the frontend.
+- Ensure all APIs are explained in the documentation.
+- Verify changes in the backend are reflected in the frontend (`src/static/**`). If possible breaking changes are found, mention them to the developer.
