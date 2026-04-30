@@ -2,7 +2,7 @@
 
 - Validate input sanitization practices.
 - Search for risks that might expose user data.
-- Prefer loading configuration and content from the database instead of hard coded content. If absolutely necessary, load it from environment variables or a non-committed config file.
+- Prefer loading user-facing content or application data from the database instead of hard-coded content. Load configuration, especially secrets such as database URIs, credentials, and API keys, from environment variables, a secret store, or a non-committed config file.
 
 ## Code Quality
 
